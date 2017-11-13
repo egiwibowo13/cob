@@ -20,8 +20,6 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "./dist/css/skins/_all-skins.min.css",
-        "./dist/css/AdminLTE.min.css",
         "./node_modules/bootstrap/dist/css/bootstrap.min.css",
         "./node_modules/bootstrap/dist/css/bootstrap-theme.min.css",
         "./node_modules/datatables.net-bs/css/dataTables.bootstrap.css",
