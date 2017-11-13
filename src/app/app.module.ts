@@ -10,10 +10,11 @@ import { AppComponent } from './app.component';
 import { IndexheaderComponent } from './indexheader/indexheader.component';
 import { IndexfooterComponent } from './indexfooter/indexfooter.component';
 import { IndexsidebarComponent } from './indexsidebar/indexsidebar.component';
+import { SearchComponent } from './search/search.component';
 
 
 let routes : Routes=[
- 
+  {path : '',component:SearchComponent},
 ]
 
 
