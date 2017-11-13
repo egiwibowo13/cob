@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "demo-deploy"
+    "name": "day16"
   },
   "apps": [
     {
@@ -19,9 +19,23 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "./dist/css/skins/_all-skins.min.css",
+        "./dist/css/AdminLTE.min.css",
+        "./bower_components/bootstrap/dist/css/bootstrap.min.css",
+        "./bower_components/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/bootstrap/dist/css/bootstrap-theme.min.css",
+        "../node_modules/datatables.net-bs/css/dataTables.bootstrap.css",
+        "../node_modules/datatables.net-select-bs/css/select.bootstrap.css"
+        
       ],
-      "scripts": [],
+      "scripts": [
+        "./bower_components/bootstrap/dist/js/bootstrap.js",
+        "./bower_components/jquery/dist/jquery.js"
+       
+        
+        
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
