@@ -25,6 +25,7 @@ let routes : Routes=[
     IndexheaderComponent,
     IndexfooterComponent,
     IndexsidebarComponent,  
+    SearchComponent
    ],
   imports: [
     BrowserModule,
