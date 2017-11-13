@@ -7,10 +7,13 @@ import {HttpClientModule} from '@angular/common/http';
 import { CommonModule } from '@angular/common'; 
 
 import { AppComponent } from './app.component';
+import { IndexheaderComponent } from './indexheader/indexheader.component';
+import { IndexfooterComponent } from './indexfooter/indexfooter.component';
+import { IndexsidebarComponent } from './indexsidebar/indexsidebar.component';
 
 
 let routes : Routes=[
-  
+ 
 ]
 
 
@@ -18,7 +21,10 @@ let routes : Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-     ],
+    IndexheaderComponent,
+    IndexfooterComponent,
+    IndexsidebarComponent,  
+   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
