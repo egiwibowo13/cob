@@ -1,0 +1,61 @@
+
+<div class="col-md-10">
+    <div class="box box-info">
+        <div class="box-header with-border">
+          <h3 class="box-title">Data Pembayaran</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <table class="table" *ngIf="dataDetail">
+            <tr>
+              <th style="width: 10px">#</th>
+              <th>Atribut</th>
+              <th>Detail</th>
+              
+            </tr>
+          
+            <tr>
+              <td>1.</td>
+              <td>Tanggal Pembayaran</td>
+              <td>
+                  {{dataDetail.TglPembayaran}}
+              </td>
+              
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Harga Total</td>
+              <td>
+                  {{dataDetail.HargaTotal}}
+              </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Status Pembayaran</td>
+                <td>
+                    {{dataDetail.StatusPembayaran}}
+                </td>
+              </tr>
+
+              <tr>
+                  <td>4.</td>
+                  <td>Username Penyewa</td>
+                  <td>
+                      {{dataDetail.UserNamePenyewa}}
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>5.</td>
+                    <td>Kode Data Sewa</td>
+                    <td>
+                        {{dataDetail.KdDataSewa}}
+                    </td>
+                  </tr>
+           
+          </table>
+        </div>
+        <!-- /.box-body -->
+      </div>
+    </div>
+     

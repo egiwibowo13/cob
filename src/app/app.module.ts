@@ -20,7 +20,22 @@ import { PenyewaComponent } from './penyewa/penyewa.component';
 import { PenyewaaddComponent } from './penyewa/penyewaadd/penyewaadd.component';
 import { PenyewadetailComponent } from './penyewa/penyewadetail/penyewadetail.component';
 import { PenyewaeditComponent } from './penyewa/penyewaedit/penyewaedit.component';
-
+import { DendaComponent } from './denda/denda.component';
+import { DendaaddComponent } from './denda/dendaadd/dendaadd.component';
+import { DendadetailComponent } from './denda/dendadetail/dendadetail.component';
+import { DendaeditComponent } from './denda/dendaedit/dendaedit.component';
+import { KategoriComponent } from './kategori/kategori.component';
+import { KategoriaddComponent } from './kategori/kategoriadd/kategoriadd.component';
+import { KategoridetailComponent } from './kategori/kategoridetail/kategoridetail.component';
+import { KategorieditComponent } from './kategori/kategoriedit/kategoriedit.component';
+import { PegawaiComponent } from './pegawai/pegawai.component';
+import { PegawaiaddComponent } from './pegawai/pegawaiadd/pegawaiadd.component';
+import { PegawaidetailComponent } from './pegawai/pegawaidetail/pegawaidetail.component';
+import { PegawaieditComponent } from './pegawai/pegawaiedit/pegawaiedit.component';
+import { PembayaranComponent } from './pembayaran/pembayaran.component';
+import { PembayaranaddComponent } from './pembayaran/pembayaranadd/pembayaranadd.component';
+import { PembayarandetailComponent } from './pembayaran/pembayarandetail/pembayarandetail.component';
+import { PembayaraneditComponent } from './pembayaran/pembayaranedit/pembayaranedit.component';
 
 
 
@@ -36,6 +51,23 @@ let routes : Routes=[
   {path:'penyewa/add',component:PenyewaaddComponent},
   {path:'penyewa/detail/:id',component:PenyewadetailComponent},
   {path:'penyewa/edit/:id',component:PenyewaeditComponent},
+  {path:'denda',component:DendaComponent},
+  {path:'denda/add',component:DendaaddComponent},
+  {path:'denda/detail/:id',component:DendadetailComponent},
+  {path:'denda/edit/:id',component:DendaeditComponent},
+  {path:'kategori',component:KategoriComponent},
+  {path:'kategori/add',component:KategoriaddComponent},
+  {path:'kategori/detail/:id',component:KategoridetailComponent},
+  {path:'kategori/edit/:id',component:KategorieditComponent},
+  {path:'pegawai',component:PegawaiComponent},
+  {path:'pegawai/add',component:PegawaiaddComponent},
+  {path:'pegawai/detail/:id',component:PegawaidetailComponent},
+  {path:'pegawai/edit/:id',component:PegawaieditComponent},
+  {path:'pembayaran',component:PembayaranComponent},
+  {path:'pembayaran/add',component:PembayaranaddComponent},
+  {path:'pembayaran/detail/:id',component:PembayarandetailComponent},
+  {path:'pembayaran/edit/:id',component:PembayaraneditComponent},
+  
  
   
   
@@ -59,6 +91,22 @@ let routes : Routes=[
     PenyewaaddComponent,
     PenyewadetailComponent,
     PenyewaeditComponent,
+    DendaComponent,
+    DendaaddComponent,
+    DendadetailComponent,
+    DendaeditComponent,
+    KategoriComponent,
+    KategoriaddComponent,
+    KategoridetailComponent,
+    KategorieditComponent,
+    PegawaiComponent,
+    PegawaiaddComponent,
+    PegawaidetailComponent,
+    PegawaieditComponent,
+    PembayaranComponent,
+    PembayaranaddComponent,
+    PembayarandetailComponent,
+    PembayaraneditComponent,
 
     
     
