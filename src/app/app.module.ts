@@ -38,7 +38,6 @@ import { PembayarandetailComponent } from './pembayaran/pembayarandetail/pembaya
 import { PembayaraneditComponent } from './pembayaran/pembayaranedit/pembayaranedit.component';
 import { DataSewaComponent } from './data-sewa/data-sewa.component';
 import { DataSewadetailComponent } from './data-sewa/data-sewadetail/data-sewadetail.component';
-import { DataSewakembaliComponent} from './data-sewa/data-sewakembali/data-sewakembali.component';
 
 
 
@@ -71,7 +70,6 @@ let routes : Routes=[
   {path:'pembayaran/detail/:id',component:PembayarandetailComponent},
   {path:'pembayaran/edit/:id',component:PembayaraneditComponent},
   {path:'datasewa/detail/:id',component:DataSewadetailComponent},
-  {path:'datasewa/kembali/:id',component:DataSewakembaliComponent}
   
  
   
@@ -114,7 +112,6 @@ let routes : Routes=[
     PembayaraneditComponent,
     DataSewaComponent,
     DataSewadetailComponent,
-    DataSewakembaliComponent,
 
     
     
