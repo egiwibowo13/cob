@@ -208,15 +208,15 @@ debugger;
     // }
   }
 
-//   kembaliBarang(id, statusdatasewa) {
-//     if (statusdatasewa == "booked") {
-//       alert("anda harus bayar terlebih dahulu")
-//     } else if (statusdatasewa == "selesai") {
-//       alert("barang sudah dikembalikan")
-//     } else {
-//       window.location.href = './datasewa/kembali/' + id;
-//     }
+  kembaliBarang(id, statusdatasewa) {
+    if (statusdatasewa == "booked") {
+      alert("anda harus bayar terlebih dahulu")
+    } else if (statusdatasewa == "selesai") {
+      alert("barang sudah dikembalikan")
+    } else {
+      window.location.href = './datasewa/kembali/' + id;
+    }
 
 
-//   }
+  }
 }
