@@ -69,6 +69,7 @@ let routes : Routes=[
   {path:'pembayaran/add',component:PembayaranaddComponent},
   {path:'pembayaran/detail/:id',component:PembayarandetailComponent},
   {path:'pembayaran/edit/:id',component:PembayaraneditComponent},
+  {path:'datasewa',component:DataSewaComponent},
   {path:'datasewa/detail/:id',component:DataSewadetailComponent},
   
  
