@@ -100,113 +100,113 @@ export class DataSewaComponent implements OnInit {
     }
   }
 
-//   konfPembayaran(id, kdbarang, statusdatasewa, tglmulai) {
-// this.tgl = new Date();
-// this.tglnow= Math.floor(Date.parse(this.tgl.toString())/86400000)
-// this.tgl_mulai= Math.floor(Date.parse(tglmulai.toString())/86400000)
+  konfPembayaran(id, kdbarang, statusdatasewa, tglmulai) {
+this.tgl = new Date();
+this.tglnow= Math.floor(Date.parse(this.tgl.toString())/86400000)
+this.tgl_mulai= Math.floor(Date.parse(tglmulai.toString())/86400000)
 
 
-//     console.log(tglmulai)
-//     console.log(this.tgl_mulai)
-//     console.log(this.tgl)
-//     console.log(this.tglnow)
-// debugger;
-//     if (statusdatasewa == "booked") {
+    console.log(tglmulai)
+    console.log(this.tgl_mulai)
+    console.log(this.tgl)
+    console.log(this.tglnow)
+debugger;
+    if (statusdatasewa == "booked") {
 
-//       if (this.tgl_mulai>this.tglnow) {
+      if (this.tgl_mulai>this.tglnow) {
          
-//         alert("belum waktunya");
+        alert("belum waktunya");
   
         
-//       }else if (this.tgl_mulai<this.tglnow) {
-//         alert("kelewat")
-//       }else{
-//         this.cek = true;
+      }else if (this.tgl_mulai<this.tglnow) {
+        alert("kelewat")
+      }else{
+        this.cek = true;
         
      
-//           this.http.get('https://penyewaanbatch124.herokuapp.com/api/datasewa/' + id + '?token=' + localStorage.getItem("token"))
-//           .subscribe((res: Response) => {
-//           //  document.getElementById("cobakonfpembayaran").dataset.datatoggle = 'modal';
-//           //  document.getElementById("cobakonfpembayaran").dataset.datatarget = '#konfirmasipembayaran';
+          this.http.get('https://penyewaanbatch124.herokuapp.com/api/datasewa/' + id + '?token=' + localStorage.getItem("token"))
+          .subscribe((res: Response) => {
+          //  document.getElementById("cobakonfpembayaran").dataset.datatoggle = 'modal';
+          //  document.getElementById("cobakonfpembayaran").dataset.datatarget = '#konfirmasipembayaran';
 
-//           //  var myModalInstance = new Modal(myModal, options);
-//           //  myModalInstance.show();
-//           //  x.setAttribute('data-target','#konfirmasipembayaran');
+          //  var myModalInstance = new Modal(myModal, options);
+          //  myModalInstance.show();
+          //  x.setAttribute('data-target','#konfirmasipembayaran');
 
-//             this.dataDetail = res.json();
-//             this.tanggalmulai = this.dataDetail.TglMulai;
-//             this.tanggalselesai = this.dataDetail.TglSelesai;
-//             this.dataUpdate = this.dataDetail;
-//             this.dataUpdate.UserNamePegawai = localStorage.getItem("username");
-//             this.dataUpdate.StatusDataSewa = "aktif";
-//             console.log(this.dataUpdate.StatusDataSewa)
+            this.dataDetail = res.json();
+            this.tanggalmulai = this.dataDetail.TglMulai;
+            this.tanggalselesai = this.dataDetail.TglSelesai;
+            this.dataUpdate = this.dataDetail;
+            this.dataUpdate.UserNamePegawai = localStorage.getItem("username");
+            this.dataUpdate.StatusDataSewa = "aktif";
+            console.log(this.dataUpdate.StatusDataSewa)
   
-//             //  this.dataDetail.StatusDataSewa="aktif";
-//             this.http.get('https://penyewaanbatch124.herokuapp.com/api/kdbarang/' + kdbarang)
-//               .subscribe((res: Response) => {
-//                 this.dataBarang = res.json();
-//                 this.dataBarangUpdate = this.dataBarang[0];
-//                 this.idBarang = this.dataBarang[0]._id;
-//                 this.harga = this.dataUpdate.JumlahBarang * this.dataBarang[0].HargaSewa * Math.floor((Date.parse(this.tanggalselesai.toString()) - Date.parse(this.tanggalmulai.toString())) / 86400000)
-//                 this.dataPembayaran = new Data();
-//                 debugger;
-//                 console.log("harga : " + this.harga);
-//                 // window.location.href='./datasewa';
-//               });
+            //  this.dataDetail.StatusDataSewa="aktif";
+            this.http.get('https://penyewaanbatch124.herokuapp.com/api/kdbarang/' + kdbarang)
+              .subscribe((res: Response) => {
+                this.dataBarang = res.json();
+                this.dataBarangUpdate = this.dataBarang[0];
+                this.idBarang = this.dataBarang[0]._id;
+                this.harga = this.dataUpdate.JumlahBarang * this.dataBarang[0].HargaSewa * Math.floor((Date.parse(this.tanggalselesai.toString()) - Date.parse(this.tanggalmulai.toString())) / 86400000)
+                this.dataPembayaran = new Data();
+                debugger;
+                console.log("harga : " + this.harga);
+                // window.location.href='./datasewa';
+              });
   
-//           })
+          })
    
         
-//       }
+      }
 
-//     } else {
-//       alert("sudah di bayar");
-//     }
-
-
-//   }
-
-//   datasewaPosttoPembayaran(id) {
-//     // if (document.cookie=="") {
-//     //   window.location.href='./login';
-//     // }else{
+    } else {
+      alert("sudah di bayar");
+    }
 
 
+  }
 
-//     this.http.put('https://penyewaanbatch124.herokuapp.com/api/datasewa/' + id + "?token=" + localStorage.getItem("token"), this.dataUpdate)
-//       .subscribe((res: Response) => {
-
-//         this.dataPembayaran.UserNamePenyewa = this.dataUpdate.UserNamePenyewa;
-//         this.dataPembayaran.HargaTotal = this.harga;
-//         this.dataPembayaran.TglPembayaran = new Date();
-//         this.dataPembayaran.TglPembayaran = this.dataPembayaran.TglPembayaran
-//         this.dataPembayaran.StatusPembayaran = "lunas";
-//         this.dataPembayaran.KdDataSewa = this.dataUpdate.KdDataSewa;
-//         // this.dataBarangUpdate.JumlahBarang = this.dataBarangUpdate.JumlahBarang - this.dataUpdate.JumlahBarang;
-//         debugger;
-//         this.http.put('https://penyewaanbatch124.herokuapp.com/api/barang/' + this.idBarang, this.dataBarangUpdate)
-//           .subscribe((res: Response) => {
+  datasewaPosttoPembayaran(id) {
+    // if (document.cookie=="") {
+    //   window.location.href='./login';
+    // }else{
 
 
 
-//             let header = new Headers({ 'Content-Type': 'application/json' });
-//             let opsi = new RequestOptions({ headers: header });
-//             let data = JSON.stringify(this.dataPembayaran);
-//             this.http.post('https://penyewaanbatch124.herokuapp.com/api/pembayaran?token=' + localStorage.getItem("token"), data, opsi)
-//               .subscribe((res: Response) => {
-//                 window.location.href = './datasewa';
-//                 debugger;
+    this.http.put('https://penyewaanbatch124.herokuapp.com/api/datasewa/' + id + "?token=" + localStorage.getItem("token"), this.dataUpdate)
+      .subscribe((res: Response) => {
+
+        this.dataPembayaran.UserNamePenyewa = this.dataUpdate.UserNamePenyewa;
+        this.dataPembayaran.HargaTotal = this.harga;
+        this.dataPembayaran.TglPembayaran = new Date();
+        this.dataPembayaran.TglPembayaran = this.dataPembayaran.TglPembayaran
+        this.dataPembayaran.StatusPembayaran = "lunas";
+        this.dataPembayaran.KdDataSewa = this.dataUpdate.KdDataSewa;
+        // this.dataBarangUpdate.JumlahBarang = this.dataBarangUpdate.JumlahBarang - this.dataUpdate.JumlahBarang;
+        debugger;
+        this.http.put('https://penyewaanbatch124.herokuapp.com/api/barang/' + this.idBarang, this.dataBarangUpdate)
+          .subscribe((res: Response) => {
 
 
-//               })
 
-//           })
+            let header = new Headers({ 'Content-Type': 'application/json' });
+            let opsi = new RequestOptions({ headers: header });
+            let data = JSON.stringify(this.dataPembayaran);
+            this.http.post('https://penyewaanbatch124.herokuapp.com/api/pembayaran?token=' + localStorage.getItem("token"), data, opsi)
+              .subscribe((res: Response) => {
+                window.location.href = './datasewa';
+                debugger;
 
-//       });
+
+              })
+
+          })
+
+      });
 
 
-//     // }
-//   }
+    // }
+  }
 
 //   kembaliBarang(id, statusdatasewa) {
 //     if (statusdatasewa == "booked") {

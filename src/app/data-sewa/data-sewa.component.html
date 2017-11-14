@@ -30,10 +30,10 @@
                                   <a class ="label label-success" [routerLink]="['./detail/'+rec._id]"><span class="glyphicon glyphicon-search"></span></a>
                                   <!-- <a class ="label label-info" [routerLink]="['./edit/'+rec._id]"><span class="glyphicon glyphicon-pencil"></span></a> -->
                                   <a class ="label label-danger" (click)= "datasewaDelete(rec._id)" ><span class="glyphicon glyphicon-trash"></span></a>
-                                  <!-- <a id="pembayaran" class ="label label-success" 
+                                  <a id="pembayaran" class ="label label-success" 
                                   (click)= "konfPembayaran(rec._id,rec.KdBarang,rec.StatusDataSewa, rec.TglMulai)" data-toggle="modal" data-target="#konfirmasipembayaran">
                                     <span  class="fa fa-dollar"></span></a>
-                                  <a class ="label label-info" (click)="kembaliBarang(rec._id,rec.StatusDataSewa)"><span class="fa fa-credit-card-alt" aria-hidden="true"> </span></a> -->
+                                  <!-- <a class ="label label-info" (click)="kembaliBarang(rec._id,rec.StatusDataSewa)"><span class="fa fa-credit-card-alt" aria-hidden="true"> </span></a> -->
                             </td>
                            
                           </tr>
@@ -48,7 +48,7 @@
     </div>
 
 
-<!-- modal konfirmasi pembayaran
+modal konfirmasi pembayaran
     <div class="modal fade" id="konfirmasipembayaran" role="dialog" aria-labelledby="modaldetailtitle">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -134,4 +134,4 @@
                   </form>
         </div>
       </div>
-    </div> -->
+    </div>
