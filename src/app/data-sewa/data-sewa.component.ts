@@ -90,15 +90,15 @@ export class DataSewaComponent implements OnInit {
     // } 
   }
 
-//   datasewaDelete(id) {
-//     if (confirm("apakah anda yakin akan menghapus data ini ?") == true) {
-//       this.http.delete('https://penyewaanbatch124.herokuapp.com/api/datasewa/' + id + '?token=' + localStorage.getItem("token"))
-//         .subscribe((res: Response) => {
-//           window.location.href = './datasewa';
-//         })
-//     } else {
-//     }
-//   }
+  datasewaDelete(id) {
+    if (confirm("apakah anda yakin akan menghapus data ini ?") == true) {
+      this.http.delete('https://penyewaanbatch124.herokuapp.com/api/datasewa/' + id + '?token=' + localStorage.getItem("token"))
+        .subscribe((res: Response) => {
+          window.location.href = './datasewa';
+        })
+    } else {
+    }
+  }
 
 //   konfPembayaran(id, kdbarang, statusdatasewa, tglmulai) {
 // this.tgl = new Date();
