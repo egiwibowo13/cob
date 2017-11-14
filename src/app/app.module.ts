@@ -11,10 +11,12 @@ import { IndexheaderComponent } from './indexheader/indexheader.component';
 import { IndexfooterComponent } from './indexfooter/indexfooter.component';
 import { IndexsidebarComponent } from './indexsidebar/indexsidebar.component';
 import { SearchComponent } from './search/search.component';
+import { LoginComponent } from './login/login.component';
 
 
 let routes : Routes=[
   {path : '',component:SearchComponent},
+  {path:'login',component:LoginComponent},
 ]
 
 
@@ -25,7 +27,8 @@ let routes : Routes=[
     IndexheaderComponent,
     IndexfooterComponent,
     IndexsidebarComponent,  
-    SearchComponent
+    SearchComponent,
+    LoginComponent
    ],
   imports: [
     BrowserModule,
