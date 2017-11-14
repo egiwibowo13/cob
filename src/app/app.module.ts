@@ -20,10 +20,7 @@ import { PenyewaComponent } from './penyewa/penyewa.component';
 import { PenyewaaddComponent } from './penyewa/penyewaadd/penyewaadd.component';
 import { PenyewadetailComponent } from './penyewa/penyewadetail/penyewadetail.component';
 import { PenyewaeditComponent } from './penyewa/penyewaedit/penyewaedit.component';
-import { DataSewaComponent } from './data-sewa/data-sewa.component';
-import { DataSewaaddComponent } from './data-sewa/data-sewaadd/data-sewaadd.component';
-import { DataSewadetailComponent } from './data-sewa/data-sewadetail/data-sewadetail.component';
-import { DataSewaeditComponent } from './data-sewa/data-sewaedit/data-sewaedit.component';
+
 
 
 
@@ -39,10 +36,7 @@ let routes : Routes=[
   {path:'penyewa/add',component:PenyewaaddComponent},
   {path:'penyewa/detail/:id',component:PenyewadetailComponent},
   {path:'penyewa/edit/:id',component:PenyewaeditComponent},
-  {path:'datasewa',component:DataSewaComponent},
-  {path:'datasewa/add',component:DataSewaaddComponent},
-  {path:'datasewa/detail/:id',component:DataSewadetailComponent},
-  {path:'datasewa/edit/:id',component:DataSewaeditComponent},
+ 
   
   
 ]
@@ -65,10 +59,7 @@ let routes : Routes=[
     PenyewaaddComponent,
     PenyewadetailComponent,
     PenyewaeditComponent,
-    DataSewaComponent,
-    DataSewaaddComponent,
-    DataSewadetailComponent,
-    DataSewaeditComponent,
+
     
     
    ],
